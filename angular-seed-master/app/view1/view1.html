@@ -1,8 +1,10 @@
-<h1>Ranking for the Game of Bad Pong (if you at the bottom you suck)</h1>
-<div ng-controller="View1Ctrl">
-	<table>
-		<tr ng-repeat="x in records">
-			<td>{{ x.name }}</td>
-			<td>{{x.score }}</td>
-	</table>
+<div class="center">
+	<h1>Bad Pong Power Rankings</h1>
+	<div ng-controller="View1Ctrl">
+		<table id="leaderboardTable">
+			<tr ng-repeat="x in records">
+				<td>{{ x.name }}</td>
+				<td>{{x.score }}</td>
+		</table>
+	</div>
 </div>

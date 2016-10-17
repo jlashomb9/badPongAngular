@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute'])
+angular.module('myApp.view1', ['ngRoute', 'services'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/leaderboard', {
@@ -10,8 +10,6 @@ angular.module('myApp.view1', ['ngRoute'])
 }])
 
 .controller('View1Ctrl', ['$scope', 'lbService', function($scope, lbService) {
-	var self = this;
-
-	$scope.records = self.lbService.getPlayers();
+	$scope.records = lbService.getPlayers();
        
 }]);

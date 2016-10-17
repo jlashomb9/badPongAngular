@@ -6,7 +6,7 @@ angular.module('myApp', [
   'myApp.view1',
   'myApp.view2',
   'myApp.view3',
-  'myApp.services',
+  'services',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
