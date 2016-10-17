@@ -1,0 +1,24 @@
+
+<h1>Add to the Fun of Bad Pong</h1>
+<div ng-controller="View2Ctrl">
+	<form ng-sumbit="updateLeaderboard(winningPlayer1,winningPlayer2,lossingPlayer1,lossingPlayer2,winningScore,loserScore)">
+		<div>
+			<h3>Winning Player</h3>
+			<input type="text" ng-model="game.winningPlayer1"><br>
+			<input type="text" ng-model="game.winningPlayer2"><br>
+			<h4>Score Reached</h4>
+			<input type="number" ng-model="game.winningScore" min="0" max="30">
+		</div>
+		<div>	
+			<h3>Losing Players</h3>
+			<input type="text" ng-model="game.lossingPlayer1"><br>
+			<input type="text" ng-model="game.lossingPlayer2"><br>
+			<h4>Score Reached</h4>
+			<input type="number" ng-model="game.loserScore" min="0" max="30">
+		</div>
+		<br>
+		<button type="submit">Update Leaderboard</button>
+	</form>
+		{{ game }}
+</div>
+
